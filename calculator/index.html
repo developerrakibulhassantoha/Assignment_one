@@ -8,39 +8,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <h1 class="row gy-2 gx-3 align-items-center mt-5 justify-content-center">Calculator Project</h1>
-      <form class="row g-3">
-        <!-- class="col-auto" -->
+    <h1 class="row gy-2 gx-3 align-items-center mt-5 mb-5 justify-content-center">Calculator Project</h1>
+      <form class="row gy-2 gx-3 align-items-center">
+        <div class="input-group mb-3">
+          <div class="col-4">
+            <label for="firstNumber" class="form-label">First Number:</label>
+            <input type="text" class="form-control" id="firstNumber">
+          </div>
+            
+          <div class="col-4">
+            <label for="operators" class="form-label">Operation:</label>
+            <select id="operators" class="form-select">
+              <option selected>selecte option</option>
+              <option value="add">addition (+)</option>
+              <option value="subtraction">subtraction (-)</option>
+              <option value="divide"> division (/)</option>
+              <option value="multiply">multiplication (*)</option>
+            </select>
+          </div>
+          
+          <div class="col-4">
+            <label for="secondNumber" class="form-label">Second Number:</label>
+            <input type="text" class="form-control" id="secondNumber">
+          </div>
 
-
-        <div  class="input-group mb-4">
-          <input type="text" class="form-control" id="firstNumber">
         </div>
-
-        <div class="input-group mb-4">
-          <select id="operators" class="form-select">
-            <option selected>selecte option</option>
-            <option value="add">addition (+)</option>
-            <option value="subtraction">subtraction (-)</option>
-            <option value="divide"> division (/)</option>
-            <option value="multiply">multiplication (*)</option>
-          </select>
-        </div>
-
-        <div class="mb-4">
-          <input type="text" class="form-control" id="secondNumber">
-        </div></br>
-
-        <div class="col-auto">
-          <button type="button" class="btn btn-warning" onclick="calculator();">submit</button>
+        <div>
+          <div>
+            <button type="button" class="btn btn-warning mb-3 mt-3" onclick="calculator();">calculator</button>
+          </div>
+          <div class="col-12">
+            <input type="text"  class="form-control" id="result2" placeholder="Example input placeholder"  >
+          </div>
         </div>
         
+          
+
+          
+
         
-
-        <div class="col-auto">
-          <input type="text" style="color: blue; background-color: brown;" class="form-control" id="result2" placeholder="Example input placeholder"  >
-        </div>
-
       </form>
 
 
