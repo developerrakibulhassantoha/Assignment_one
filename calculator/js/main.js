@@ -23,7 +23,7 @@ function calculator(){
         }
     }
     else{
-        result = 'Invalid operator';
+        result = 'Invalid Number';
     }
     document.getElementById('result2').value = 'Result: ' + result;
 }
