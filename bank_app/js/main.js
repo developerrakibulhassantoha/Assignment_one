@@ -19,6 +19,7 @@ class BankAccount{
         console.log(`Balance: $${this.balance}`);
     }
 }
+
 const account1 = new BankAccount('RH-1001', 'Rakibul Hassan', 1500);
 account1.deposit(1500);
 account1.withdraw(500);
