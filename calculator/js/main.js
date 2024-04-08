@@ -4,7 +4,6 @@ function calculator(){
     var operator=document.getElementById('operators').value;
     
    var result;
-
     if(operator === 'add'){
          result = firstNumber+secondNumber;
     }
@@ -23,7 +22,7 @@ function calculator(){
         }
     }
     else{
-        result = 'Invalid Number';
+        result = 'Invalid operator';
     }
     document.getElementById('result2').value = 'Result: ' + result;
 }
