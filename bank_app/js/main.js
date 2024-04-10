@@ -19,13 +19,13 @@ class BankAccount{
         console.log(`Balance: $${this.balance}`);
     }
 }
-
+console.log('Account Details:')
 const account1 = new BankAccount('RH-1001', 'Rakibul Hassan', 1500);
 account1.deposit(1500);
 account1.withdraw(500);
 account1.displayAccountInfo();
 
-
+console.log('\nAccount Details:')
 const account2 = new BankAccount('SI-1002', 'Sharmin Islam Anika', 2500);
 account2.deposit(1500);
 account2.withdraw(3000);
